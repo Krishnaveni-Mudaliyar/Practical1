@@ -1,0 +1,22 @@
+public class mysql {
+    Connection c;
+    Statement s;
+
+    public mysql() {
+        try {
+            // Database credentials
+            String url = "jdbc:mysql://localhost:3307/mysqlqueries"; // Replace 'mydatabase' with your schema name
+            String user = "root"; // Replace with your MySQL username
+            String password = "root"; // Replace with your MySQL password
+
+            // Establishing connection
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3307/mysqlqueries", "root", "root");
+            s = c.createStatement();
+            System.out.println("Connected to the database successfully!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
