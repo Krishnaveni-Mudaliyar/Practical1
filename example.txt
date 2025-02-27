@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class mysql {
     Connection c;
     Statement s;
@@ -20,3 +21,8 @@ public class mysql {
         }
     }
 }
+=======
+hello
+
+git remote add orig
+>>>>>>> 2351911a79b448ebf3132b6b6e0ca32eb48c19b0
